@@ -1,0 +1,119 @@
+.add-pizza-page {
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 30px 20px 50px;
+}
+
+.add-pizza-card {
+  padding: 32px;
+  background: #ffffff;
+  border: 1px solid #eee2d8;
+  border-radius: 16px;
+  box-shadow: 0 6px 24px rgba(70, 40, 20, 0.08);
+}
+
+.add-pizza-card h1 {
+  margin: 0 0 8px;
+  color: #38251f;
+  font-size: 30px;
+}
+
+.add-pizza-subtitle {
+  margin: 0 0 28px;
+  color: #887a71;
+  font-size: 14px;
+}
+
+.add-pizza-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.add-pizza-form label {
+  margin-top: 8px;
+  color: #49372e;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.add-pizza-form input,
+.add-pizza-form textarea,
+.add-pizza-form select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 14px;
+  color: #38251f;
+  background: #fffdfb;
+  border: 1px solid #dfd2c8;
+  border-radius: 8px;
+  font: inherit;
+  font-size: 14px;
+  outline: none;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.add-pizza-form input:focus,
+.add-pizza-form textarea:focus,
+.add-pizza-form select:focus {
+  border-color: #c94b32;
+  box-shadow: 0 0 0 3px rgba(201, 75, 50, 0.12);
+}
+
+.add-pizza-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.add-pizza-form select {
+  cursor: pointer;
+}
+
+.add-pizza-form button {
+  margin-top: 18px;
+  padding: 14px;
+  color: #ffffff;
+  background: #c94b32;
+  border: none;
+  border-radius: 9px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.add-pizza-form button:hover {
+  background: #a93622;
+}
+
+.add-pizza-form button:active {
+  transform: scale(0.99);
+}
+
+.add-pizza-form .form-error {
+  margin: 0 0 8px;
+  padding: 12px 14px;
+  color: #a52d22;
+  background: #fff0ee;
+  border: 1px solid #f2c6c1;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+@media (max-width: 500px) {
+  .add-pizza-page {
+    padding: 20px 12px 35px;
+  }
+
+  .add-pizza-card {
+    padding: 22px 18px;
+  }
+
+  .add-pizza-card h1 {
+    font-size: 25px;
+  }
+}

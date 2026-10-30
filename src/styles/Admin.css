@@ -1,0 +1,134 @@
+.admin-page {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.admin-page h1 {
+  margin-bottom: 25px;
+  color: #38251f;
+}
+
+.admin-pizza-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.admin-pizza-item {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 14px;
+  background: #ffffff;
+  border: 1px solid #eee2d8;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(70, 40, 20, 0.06);
+  transition: box-shadow 0.2s ease;
+}
+
+.admin-pizza-item:hover {
+  box-shadow: 0 5px 16px rgba(70, 40, 20, 0.12);
+}
+
+.admin-pizza-image {
+  width: 100px;
+  height: 85px;
+  flex-shrink: 0;
+  object-fit: cover;
+  border-radius: 9px;
+}
+
+.admin-pizza-info {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+  min-width: 0;
+}
+
+.admin-pizza-info h3 {
+  margin: 0;
+  color: #38251f;
+  font-size: 18px;
+}
+
+.admin-pizza-info p {
+  margin: 0;
+  color: #786b64;
+  font-size: 14px;
+  overflow-wrap: anywhere;
+}
+
+.admin-pizza-info strong {
+  color: #c94b32;
+  font-size: 16px;
+}
+
+.admin-pizza-category {
+  padding: 4px 9px;
+  color: #79513b;
+  background: #f7eee5;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.admin-pizza-actions {
+  display: flex;
+  flex-shrink: 0;
+  gap: 8px;
+}
+
+.admin-pizza-actions button {
+  padding: 9px 12px;
+  border: none;
+  border-radius: 7px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.admin-edit-btn {
+  color: #60412c;
+  background: #f3e6d5;
+}
+
+.admin-edit-btn:hover {
+  background: #e9d4b9;
+}
+
+.admin-delete-btn {
+  color: #ffffff;
+  background: #c94b32;
+}
+
+.admin-delete-btn:hover {
+  background: #a93622;
+}
+
+@media (max-width: 650px) {
+  .admin-pizza-item {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .admin-pizza-image {
+    width: 80px;
+    height: 75px;
+  }
+
+  .admin-pizza-info {
+    flex-basis: calc(100% - 100px);
+  }
+
+  .admin-pizza-actions {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .admin-pizza-actions button {
+    flex: 1;
+  }
+}

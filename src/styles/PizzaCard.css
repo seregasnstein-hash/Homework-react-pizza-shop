@@ -1,0 +1,82 @@
+.pizza-card {
+  overflow: hidden;
+  background-color: #ffffff;
+  border: 1px solid #f0e5db;
+  border-radius: 16px;
+  box-shadow: 0 4px 14px rgba(41, 35, 31, 0.06);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.pizza-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(41, 35, 31, 0.12);
+}
+
+.pizza-card img {
+  display: block;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.pizza-card-content {
+  padding: 18px;
+}
+
+.pizza-card h3 {
+  margin: 0 0 12px;
+  font-size: 21px;
+}
+
+.pizza-card p {
+  margin: 0 0 10px;
+  color: #70665e;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.pizza-card .pizza-price {
+  margin-top: 16px;
+  color: #d94b35;
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.pizza-card .pizza-category {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #fff0e8;
+  border-radius: 20px;
+  color: #a9432e;
+  font-size: 12px;
+}
+
+.btnAddToCart{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.pizza-card button {
+  padding: 9px 12px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 7px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #60412c;
+  background: #f3e6d5;
+  transition: background 0.2s ease;
+}
+
+.pizza-card button:hover {
+  background: #e9d4b9;
+}
+
+.pizza-card button:active {
+  transform: scale(0.99);
+}
